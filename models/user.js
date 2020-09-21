@@ -8,9 +8,10 @@ const userSchema = new Schema({
     lastName: { type: String },
     createdAt: { type: Date, default: new Date() },
     email: { type: String, unique: true, required: [true, 'email is required' ] },
+    phone: { type: String, required: [true, 'phone is required' ] },
     age: { type: Number, required: [true, 'age is required' ] },
     genre: { type: String, required: [true, 'genre is required' ] },
-    hobbies: { type: Array, required: [true, 'hobbies are required' ] },
+    hobby: { type: String, required: [true, 'hobby is required' ] },
     password: { type: String, required: [true, 'password is required' ] }
 }, {timestamps: true});
 

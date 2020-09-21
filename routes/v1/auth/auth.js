@@ -49,9 +49,10 @@ router.post('/signup', (req, res) => {
     firstName: body.firstName,
     lastName: body.lastName,
     email: body.email,
+    phone: body.phone,
     age: body.age,
     genre: body.genre,
-    hobbies: body.hobbies,
+    hobby: body.hobby,
     password: bcrypt.hashSync(body.password, 10)
   });
 
